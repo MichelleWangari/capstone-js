@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Daily Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Side Navbar -->
+    <aside class="sidebar">
+      <h2>My Daily</h2>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="goals.html"><i class="fas fa-bullseye"></i> Goals</a>
+        <a href="journal.html"><i class="fas fa-book"></i> Journal</a>
+        <a href="calendar.html"><i class="fas fa-calendar-alt"></i> Planner</a>
+        <a href="budget.html"><i class="fas fa-wallet"></i> Budget</a>
+        <a href="mood.html"><i class="fas fa-smile"></i> Mood</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <!-- Top Search -->
+      <header class="top-bar">
+        <input type="text" id="searchBar" placeholder="Search dashboard...">
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Welcome to My Daily Dashboard</h1>
+        <p>Your pretty place to plan, glow, and grow.</p>
+      </section>
+
+      <!-- Carousel -->
+      <section class="carousel">
+        <div class="slides">
+          <img src="assets/pexels-annpoan-5797899.jpg"alt="journal" class="carousel-img active">
+          <img src="assets/pexels-bertellifotografia-29509458.jpg" alt="calendar" class="carousel-img">
+          <img src="assets/pexels-jessbaileydesign-768473.jpg" alt="Planner" class="carousel-img">
+          <img src="assets/pexels-polina-kovaleva-5717425.jpg"alt="goals" class="carousel-img">
+        </div>
+        <div class="carousel-buttons">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </section>
+    </main>
+  </div> 
+
+  <script src="script.js"></script>
+</body>
+</html>
+
