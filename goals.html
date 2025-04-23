@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goals&Glow-Up</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   </head>
@@ -28,12 +29,24 @@
         <!--Main content-->
         <main class="main-content">
             <!--Top search-->
-            <header class="top-bar">
-                <input type="text" id="searchBar" placeholder="Search dashboard ...">
-            </header>
+             <!-- Top Search -->
+        <header class="top-bar">
+            <input type="text" id="searchBar" placeholder="Search dashboard...">
+        </header>
+
+        <!-- Internal Goal Search -->
+          <div class="p-4">
+            <input
+              type="text"
+              id="goalFilter"
+              placeholder="Search your goals..."
+              class="w-full p-2 border rounded-md shadow-sm"
+            />
+          </div>
+
 
             <!--Goals section-->
-            <section class="goals-grid">
+            <section class="goals-grid grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
                 <div class="goal-card">
                     <h3>Wake up earlier</h3>
                     <ul>

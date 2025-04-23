@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear Diary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body>
+        <div class="container">
+          <!-- Side Navbar -->
+          <aside class="sidebar">
+            <h2>My Daily</h2>
+            <nav>
+              <a href="index.html"><i class="fas fa-home"></i> Home</a>
+              <a href="goals.html"><i class="fas fa-bullseye"></i> Goals</a>
+              <a href="journal.html"><i class="fas fa-book"></i> Journal</a>
+              <a href="calendar.html"><i class="fas fa-calendar-alt"></i> Planner</a>
+              <a href="budget.html"><i class="fas fa-wallet"></i> Budget</a>
+              <a href="mood.html"><i class="fas fa-smile"></i> Mood</a>
+            </nav>
+          </aside>
+      
+          
+            <!-- Top Search -->
+            <header class="top-bar">
+              <input type="text" id="searchBar" placeholder="Search dashboard...">
+            </header>
+
+            <main class="main-content">
+                <h1 class="page-title">Dear Dairy📝</h1>
+                
+                <form id="journalForm" class="journal-form">
+                    <input type="date" id="journalDate" required>
+                    <input type="text" id="journalTitle" placeholder="Enter Title">
+                    <textarea id="journalEntry" rows="6" placeholder="Write your thought here.." required></textarea>
+                    <button type="submit">Save entry</button>
+                </form>
+
+                <div id="entriesContainer" class="entries-container">
+                    <!-- Past entries will appear here -->
+                </div>
+            </main>
+
+        </div>
+
+    <script type="text/javascript" src="journal.js"></script>
+</body>
+</html>
